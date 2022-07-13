@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-body: hsl(0, 0%, 100%);
+
+    --bg-button: hsl(240, 9%, 89%);
+    --bg-button--focus: hsl(194, 97%, 31%);
+    
+    --fc--timer: hsl(240, 6%, 21%);
+
+    font-size: 62.5%;
+}
+.body {
+    min-height: 100vh;
+    font-size: clamp(9rem, 5rem, 12.6rem);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--bg-body);
+    color: var(--fc--timer);
+}
+.main {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+}

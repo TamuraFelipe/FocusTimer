@@ -1,0 +1,58 @@
+.timer {
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+    &-display {
+        display: flex;
+        align-items: center;
+    }
+    &-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-play,
+        &-stop,
+        &-plus,
+        &-minus {
+            background: none;
+            border: none;
+        }
+    }
+}
+.sounds {
+    max-width: 30.9rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    &-three,
+    &-rain,
+    &-coffeeShop,
+    &-firePlace {
+        width: 10.8rem;
+        height: 12.2rem;
+        border-radius: 2.4rem;
+        border: none;
+        background: var(--bg-button);
+        transition: background 300ms;
+        svg path {
+            fill: hsl(240, 6%, 21%); 
+        }
+    }
+    &-three:focus,
+    &-rain:focus,
+    &-coffeeShop:focus,
+    &-firePlace:focus {
+        background: var(--bg-button--focus);
+        svg path {
+            fill: hsl(0, 0%, 100%);
+        }
+    }
+}
+.focus {
+    background: var(--bg-button--focus);
+        svg path {
+            fill: hsl(0, 0%, 100%);
+        }
+}
