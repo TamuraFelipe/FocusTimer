@@ -36,11 +36,12 @@
         border: none;
         background: var(--bg-button);
         transition: background 300ms;
+        cursor: pointer;
         svg path {
             fill: hsl(240, 6%, 21%); 
         }
     }
-    &-three:focus,
+    /*&-three:focus,
     &-rain:focus,
     &-coffeeShop:focus,
     &-firePlace:focus {
@@ -48,7 +49,7 @@
         svg path {
             fill: hsl(0, 0%, 100%);
         }
-    }
+    }*/
 }
 .focus {
     background: var(--bg-button--focus);

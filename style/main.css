@@ -65,6 +65,7 @@
   border: none;
   background: var(--bg-button);
   transition: background 300ms;
+  cursor: pointer;
 }
 .sounds-three svg path, .sounds-rain svg path, .sounds-coffeeShop svg path, .sounds-firePlace svg path {
   fill: hsl(240deg, 6%, 21%);
